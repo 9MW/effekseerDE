@@ -1,0 +1,2 @@
+D:\effekseerDE\lib\Debug-windows-x86_64\EffekseerRendererDE\EffekseerRendererDE.pdb
+D:\effekseerDE\lib-int\Debug-windows-x86_64\EffekseerRendererDE\EffekseerRendererDE.pdb

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dist|x64">
+      <Configuration>Dist</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{159CEEB9-81FD-CBC7-0A6B-127A76CB0287}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>EffekseerRendererDE</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\libs\Debug\</OutDir>
+    <IntDir>bin-int\Debug-windows-x86_64\EffekseerRendererDE\</IntDir>
+    <TargetName>EffekseerRendererDE</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\libs\Release\</OutDir>
+    <IntDir>bin-int\Release-windows-x86_64\EffekseerRendererDE\</IntDir>
+    <TargetName>EffekseerRendererDE</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <OutDir>..\libs\Dist\</OutDir>
+    <IntDir>bin-int\Dist-windows-x86_64\EffekseerRendererDE\</IntDir>
+    <TargetName>EffekseerRendererDE</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_WIN32;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\CPPLib\DiligentCore-Windows-x64-Debug\include;..\pj2\3rdparty\DiligentTools\TextureLoader\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Common\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Platforms\Win32\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Platforms\Basic\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Primitives\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Platforms\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsEngine\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsAccessories\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsTools\interface;D:\CPPLib\EffekseerRuntime152m\src\Effekseer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_WIN32;RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\CPPLib\DiligentCore-Windows-x64-Release\include;..\pj2\3rdparty\DiligentTools\TextureLoader\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Common\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Platforms\Win32\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Platforms\Basic\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Primitives\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Platforms\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsEngine\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsAccessories\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsTools\interface;D:\CPPLib\EffekseerRuntime152m\src\Effekseer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\CPPLib\DiligentCore-Windows-x64-Dist\include;..\pj2\3rdparty\DiligentTools\TextureLoader\interface;G:\CPPLib\DiligentCore-Windows-x64-Dist\include\Common\interface;G:\CPPLib\DiligentCore-Windows-x64-Dist\include\Platforms\Win32\interface;G:\CPPLib\DiligentCore-Windows-x64-Dist\include\Platforms\Basic\interface;G:\CPPLib\DiligentCore-Windows-x64-Dist\include\Primitives\interface;G:\CPPLib\DiligentCore-Windows-x64-Dist\include\Platforms\interface;G:\CPPLib\DiligentCore-Windows-x64-Dist\include\Graphics\GraphicsEngine\interface;G:\CPPLib\DiligentCore-Windows-x64-Dist\include\Graphics\GraphicsAccessories\interface;G:\CPPLib\DiligentCore-Windows-x64-Dist\include\Graphics\GraphicsTools\interface;D:\CPPLib\EffekseerRuntime152m\src\Effekseer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="EFRenders.h" />
+    <ClInclude Include="Effekseer.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.CommonUtils.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.DDSTextureLoader.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.DXTK.DDSTextureLoader.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.DXTK.dds.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.IndexBufferBase.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.ModelRendererBase.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.PngTextureLoader.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.RenderStateBase.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.Renderer.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.Renderer_Impl.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.RibbonRendererBase.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.RingRendererBase.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.ShaderBase.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.SpriteRendererBase.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.StandardRenderer.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.TrackRendererBase.h" />
+    <ClInclude Include="EffekseerRendererCommon\EffekseerRenderer.VertexBufferBase.h" />
+    <ClInclude Include="EffekseerRendererDE.h" />
+    <ClInclude Include="EffekseerSoundAL.h" />
+    <ClInclude Include="HLSL.h" />
+    <ClInclude Include="Shader\EffekseerRenderer.ModelRenderer.ShaderDistortion_PS.h" />
+    <ClInclude Include="Shader\EffekseerRenderer.ModelRenderer.ShaderDistortion_VS.h" />
+    <ClInclude Include="Shader\EffekseerRenderer.ModelRenderer.ShaderLightingTextureNormal_PS.h" />
+    <ClInclude Include="Shader\EffekseerRenderer.ModelRenderer.ShaderLightingTextureNormal_VS.h" />
+    <ClInclude Include="Shader\EffekseerRenderer.ModelRenderer.ShaderTexture_PS.h" />
+    <ClInclude Include="Shader\EffekseerRenderer.ModelRenderer.ShaderTexture_VS.h" />
+    <ClInclude Include="Shader\EffekseerRenderer.Standard_Distortion_PS.h" />
+    <ClInclude Include="Shader\EffekseerRenderer.Standard_Distortion_VS.h" />
+    <ClInclude Include="Shader\EffekseerRenderer.Standard_Lighting_PS.h" />
+    <ClInclude Include="Shader\EffekseerRenderer.Standard_Lighting_VS.h" />
+    <ClInclude Include="Shader\EffekseerRenderer.Standard_PS.h" />
+    <ClInclude Include="Shader\EffekseerRenderer.Standard_VS.h" />
+    <ClInclude Include="ShaderGenerator.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EFRenders.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.CommonUtils.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.DDSTextureLoader.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.DXTK.DDSTextureLoader.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.IndexBufferBase.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.ModelRendererBase.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.PngTextureLoader.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.RenderStateBase.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.Renderer.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.Renderer_Impl.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.RibbonRendererBase.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.RingRendererBase.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.SpriteRendererBase.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.TrackRendererBase.cpp" />
+    <ClCompile Include="EffekseerRendererCommon\EffekseerRenderer.VertexBufferBase.cpp" />
+    <ClCompile Include="EffekseerRendererDE.cpp" />
+    <ClCompile Include="MaterialLoader.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
