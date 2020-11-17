@@ -1,2 +1,2 @@
 # effekseerDE
-[example](https://github.com/DiligentGraphics/DiligentSamples/blob/master/Tutorials/Tutorial01_HelloTriangle) 
+[example](https://github.com/9MW/effekseerDE/blob/master/eff.gif) 
