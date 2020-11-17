@@ -20,7 +20,7 @@ targetdir("lib/" .. outputdir .. "/%{prj.name}")
 objdir("lib-int/" .. outputdir .. "/%{prj.name}")
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
-IncludeDir["DiligentCore"] = "G:/CPPLib/DiligentCore-Windows-x64-%{cfg.buildcfg}/include"
+IncludeDir["DiligentCore"] = "3rdparty/DiligentCore-Windows-x64-%{cfg.buildcfg}/include"
 IncludeDir["Effekseer"] = "3rdparty/Effekseer/Effekseer"
 includedirs{
     --"%{IncludeDir.trdparty}",
@@ -53,7 +53,7 @@ filter "configurations:Release"
 defines "RELEASE"
 runtime "Release"
 optimize "on"
-buildoptions "/MD"
+buildoptions {"/MDd"} 
 
 filter "system:windows"
 systemversion "latest"
@@ -123,6 +123,10 @@ files {
 "Example/Win32/*.cpp",
 }
 
+configurations {
+    "Debug",
+    "Release"
+}
 links {
     "Effekseerd.lib",
     "EffekseerRendererDE.lib","DiligentCore.lib"

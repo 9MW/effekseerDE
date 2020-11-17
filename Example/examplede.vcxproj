@@ -59,11 +59,11 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>DEBUG;PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\CPPLib\DiligentCore-Windows-x64-Debug\include;..\3rdparty\DiligentTools\TextureLoader\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Common\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Platforms\Win32\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Platforms\Basic\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Primitives\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Platforms\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsEngine\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsAccessories\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsTools\interface;..\3rdparty\Effekseer\Effekseer;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\3rdparty\DiligentCore-Windows-x64-Debug\include;..\3rdparty\DiligentTools\TextureLoader\interface;..\3rdparty\DiligentCore-Windows-x64-Debug\include\Common\interface;..\3rdparty\DiligentCore-Windows-x64-Debug\include\Platforms\Win32\interface;..\3rdparty\DiligentCore-Windows-x64-Debug\include\Platforms\Basic\interface;..\3rdparty\DiligentCore-Windows-x64-Debug\include\Primitives\interface;..\3rdparty\DiligentCore-Windows-x64-Debug\include\Platforms\interface;..\3rdparty\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsEngine\interface;..\3rdparty\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsAccessories\interface;..\3rdparty\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsTools\interface;..\3rdparty\Effekseer\Effekseer;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -81,7 +81,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>RELEASE;PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\CPPLib\DiligentCore-Windows-x64-Release\include;..\3rdparty\DiligentTools\TextureLoader\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Common\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Platforms\Win32\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Platforms\Basic\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Primitives\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Platforms\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsEngine\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsAccessories\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsTools\interface;..\3rdparty\Effekseer\Effekseer;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\3rdparty\DiligentCore-Windows-x64-Release\include;..\3rdparty\DiligentTools\TextureLoader\interface;..\3rdparty\DiligentCore-Windows-x64-Release\include\Common\interface;..\3rdparty\DiligentCore-Windows-x64-Release\include\Platforms\Win32\interface;..\3rdparty\DiligentCore-Windows-x64-Release\include\Platforms\Basic\interface;..\3rdparty\DiligentCore-Windows-x64-Release\include\Primitives\interface;..\3rdparty\DiligentCore-Windows-x64-Release\include\Platforms\interface;..\3rdparty\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsEngine\interface;..\3rdparty\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsAccessories\interface;..\3rdparty\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsTools\interface;..\3rdparty\Effekseer\Effekseer;..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -103,7 +103,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FirstPersonCamera.cpp" />
-    <ClCompile Include="readme" />
     <ClCompile Include="Win32\InputControllerWin32.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

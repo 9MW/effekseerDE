@@ -57,7 +57,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>DEBUG;PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\CPPLib\DiligentCore-Windows-x64-Debug\include;3rdparty\DiligentTools\TextureLoader\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Common\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Platforms\Win32\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Platforms\Basic\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Primitives\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Platforms\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsEngine\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsAccessories\interface;G:\CPPLib\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsTools\interface;3rdparty\Effekseer\Effekseer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>3rdparty\DiligentCore-Windows-x64-Debug\include;3rdparty\DiligentTools\TextureLoader\interface;3rdparty\DiligentCore-Windows-x64-Debug\include\Common\interface;3rdparty\DiligentCore-Windows-x64-Debug\include\Platforms\Win32\interface;3rdparty\DiligentCore-Windows-x64-Debug\include\Platforms\Basic\interface;3rdparty\DiligentCore-Windows-x64-Debug\include\Primitives\interface;3rdparty\DiligentCore-Windows-x64-Debug\include\Platforms\interface;3rdparty\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsEngine\interface;3rdparty\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsAccessories\interface;3rdparty\DiligentCore-Windows-x64-Debug\include\Graphics\GraphicsTools\interface;3rdparty\Effekseer\Effekseer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
@@ -76,7 +76,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>RELEASE;PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\CPPLib\DiligentCore-Windows-x64-Release\include;3rdparty\DiligentTools\TextureLoader\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Common\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Platforms\Win32\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Platforms\Basic\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Primitives\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Platforms\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsEngine\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsAccessories\interface;G:\CPPLib\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsTools\interface;3rdparty\Effekseer\Effekseer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>3rdparty\DiligentCore-Windows-x64-Release\include;3rdparty\DiligentTools\TextureLoader\interface;3rdparty\DiligentCore-Windows-x64-Release\include\Common\interface;3rdparty\DiligentCore-Windows-x64-Release\include\Platforms\Win32\interface;3rdparty\DiligentCore-Windows-x64-Release\include\Platforms\Basic\interface;3rdparty\DiligentCore-Windows-x64-Release\include\Primitives\interface;3rdparty\DiligentCore-Windows-x64-Release\include\Platforms\interface;3rdparty\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsEngine\interface;3rdparty\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsAccessories\interface;3rdparty\DiligentCore-Windows-x64-Release\include\Graphics\GraphicsTools\interface;3rdparty\Effekseer\Effekseer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -84,7 +84,7 @@
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -137,27 +137,6 @@
     <ClCompile Include="src\EffekseerRendererCommon\EffekseerRenderer.VertexBufferBase.cpp" />
     <ClCompile Include="src\EffekseerRendererDE.cpp" />
     <ClCompile Include="src\MaterialLoader.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug-windows-x86_64\EffekseerRendererDE\EffekseerRendererDE.pdb" />
-    <None Include="bin\Debug-windows-x86_64\examplede\examplede.exe" />
-    <None Include="bin\Debug-windows-x86_64\examplede\examplede.ilk" />
-    <None Include="bin\Debug-windows-x86_64\examplede\examplede.pdb" />
-    <None Include="bin\Debug-windows-x86_64\examplede\GraphicsEngineD3D11_64d.dll" />
-    <None Include="bin\Debug-windows-x86_64\examplede\GraphicsEngineD3D12_64d.dll" />
-    <None Include="bin\Debug-windows-x86_64\examplede\GraphicsEngineOpenGL_64d.dll" />
-    <None Include="bin\Debug-windows-x86_64\examplede\GraphicsEngineVk_64d.dll" />
-    <None Include="bin\Debug-windows-x86_64\examplede\lnk{C689AC4B-6A27-4F0F-8ECB-7898ACED1F3B}.tmp" />
-    <None Include="bin\Release-windows-x86_64\GraphicsEngineD3D11_64r.dll" />
-    <None Include="bin\Release-windows-x86_64\GraphicsEngineD3D12_64r.dll" />
-    <None Include="bin\Release-windows-x86_64\GraphicsEngineOpenGL_64r.dll" />
-    <None Include="bin\Release-windows-x86_64\GraphicsEngineVk_64r.dll" />
-    <None Include="lib\Debug-windows-x86_64\EffekseerRendererDE\EffekseerRendererDE.pdb" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="bin\Debug-windows-x86_64\EffekseerRendererDE\EffekseerRendererDE.lib" />
-    <Library Include="lib\Debug-windows-x86_64\Effekseerd.lib" />
-    <Library Include="lib\Debug-windows-x86_64\EffekseerRendererDE\EffekseerRendererDE.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
