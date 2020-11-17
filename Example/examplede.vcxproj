@@ -103,6 +103,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FirstPersonCamera.cpp" />
+    <ClCompile Include="readme" />
     <ClCompile Include="Win32\InputControllerWin32.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

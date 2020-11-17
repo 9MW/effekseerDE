@@ -1,0 +1,1 @@
+use premake5 or later to gen project file or just use visual studio open project
