@@ -1015,7 +1015,7 @@ public:
 		manager->SetTextureLoader(renderer->CreateTextureLoader());
 		manager->SetModelLoader(renderer->CreateModelLoader());
 		manager->SetMaterialLoader(renderer->CreateMaterialLoader());
-		char16_t pth[100] = u"R:/Effekseer152mWin/Sample/02_Tktk03/ToonHit.efkefc";
+		char16_t pth[100] = u"../Sample/02_Tktk03/ToonHit.efkefc";
 		effect = Effekseer::Effect::Create(manager, pth);
         m_CameraAttribsCB = nullptr;
 		CreateUniformBuffer(m_pDevice, 256 * 2, "Camera attribs buffer", &m_CameraAttribsCB);

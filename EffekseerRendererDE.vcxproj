@@ -138,6 +138,27 @@
     <ClCompile Include="src\EffekseerRendererDE.cpp" />
     <ClCompile Include="src\MaterialLoader.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug-windows-x86_64\EffekseerRendererDE\EffekseerRendererDE.pdb" />
+    <None Include="bin\Debug-windows-x86_64\examplede\examplede.exe" />
+    <None Include="bin\Debug-windows-x86_64\examplede\examplede.ilk" />
+    <None Include="bin\Debug-windows-x86_64\examplede\examplede.pdb" />
+    <None Include="bin\Debug-windows-x86_64\examplede\GraphicsEngineD3D11_64d.dll" />
+    <None Include="bin\Debug-windows-x86_64\examplede\GraphicsEngineD3D12_64d.dll" />
+    <None Include="bin\Debug-windows-x86_64\examplede\GraphicsEngineOpenGL_64d.dll" />
+    <None Include="bin\Debug-windows-x86_64\examplede\GraphicsEngineVk_64d.dll" />
+    <None Include="bin\Debug-windows-x86_64\examplede\lnk{C689AC4B-6A27-4F0F-8ECB-7898ACED1F3B}.tmp" />
+    <None Include="bin\Release-windows-x86_64\pj2\GraphicsEngineD3D11_64r.dll" />
+    <None Include="bin\Release-windows-x86_64\pj2\GraphicsEngineD3D12_64r.dll" />
+    <None Include="bin\Release-windows-x86_64\pj2\GraphicsEngineOpenGL_64r.dll" />
+    <None Include="bin\Release-windows-x86_64\pj2\GraphicsEngineVk_64r.dll" />
+    <None Include="lib\Debug-windows-x86_64\EffekseerRendererDE\EffekseerRendererDE.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="bin\Debug-windows-x86_64\EffekseerRendererDE\EffekseerRendererDE.lib" />
+    <Library Include="lib\Debug-windows-x86_64\Effekseerd.lib" />
+    <Library Include="lib\Debug-windows-x86_64\EffekseerRendererDE\EffekseerRendererDE.lib" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
